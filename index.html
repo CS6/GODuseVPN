@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-animation-component@%5E3.2.x/dist/aframe-animation-component.min.js"></script>
+
+  </head>
+  <body>
+    <a-scene>
+
+<a-assets>
+    <a-asset-item id="tree" src="/mod/f15.glb"></a-asset-item>
+  </a-assets>
+
+
+
+
+
+   <a-entity id="GODlightJUMP" geometry="primitive: sphere; radius: 0.4" material="opacity: 0" light="type: point; color: #FFF" position="0 0.8 -3" 
+              animation="property: position;dur:500; to: 0 1.5 -3; dir: alternate; loop: true"></a-entity>
+
+   <a-entity id="GODJUMP"gltf-model="#tree" rotation="0 180 0"  geometry="primitive: sphere; radius: 0.2" material="shader: flat"  color: #FFF" position="0 0.5 -2" 
+               animation="property: position;dur:500; to: 0 1 -2; dir: alternate; loop: true"></a-entity>
+
+
+<a-entity id="GODlight" light="type: directional; color: #FFF; intensity: 1000"  rotation="0 180 0"  position="0 0.2 -3"
+ animation="property: position;dur:500; to: 0 0.8 -3; dir: alternate; loop: true"></a-entity>
+
+<a-entity id="GODlight2" light="type: point; color: #FFF; intensity: 1" 
+ rotation="0 180 0"  position="0 0.2 -1"
+ ></a-entity>
+
+
+
+  <a-entity gltf-model="#tree" position="0 0.5 -3" rotation="0 180 0" width="5" height="5" color="#4CC3D9" radius="10"></a-entity>
+
+<a-cylinder position="-0.05 0.5 -2.5" radius="0.5" height="0.5" color="#FFC65D"></a-cylinder>
+
+      
+ <a-sky src="/mod/360.jpg" rotation="0 270 0"></a-sky>
+    </a-scene>
+  </body>
+</html>
