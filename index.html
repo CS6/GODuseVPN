@@ -9,17 +9,17 @@
 </head>
 
 <body>
-  <a-scene>
+    <a-scene inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
 
     <a-assets>
       <a-asset-item id="tree" src="./mod/f15.glb"></a-asset-item>
     </a-assets>
     <a-entity id="GODlightJUMP" geometry="primitive: sphere; radius: 0.4" material="opacity: 0"
-      light="type: point; color: #FFF" position="0 0.8 -3"
-      animation="property: position;dur:500; to: 0 1.5 -3; dir: alternate; loop: true"></a-entity>
+      light="type: point; color: #FFF" position="0 1.31793 -3"
+      animation="property: position;dur:500; to: 0 1.5 -3; dir: alternate; loop: NaN"></a-entity>
 
     <a-entity id="GODJUMP" gltf-model="#tree" rotation="0 180 0" geometry="primitive: sphere; radius: 0.2"
-      material="shader: flat" color: #FFF position="0 0.5 -2"
+      material="shader: flat" color: #FFF position="0 0.75735 -2"
       animation="property: position;dur:500; to: 0 1 -2; dir: alternate; loop: true"></a-entity>
 
     <a-entity id="GODlight" light="type: directional; color: #FFF; intensity: 1000" rotation="0 180 0"
@@ -31,8 +31,6 @@
       radius="10"></a-entity> -->
 
     <a-cylinder position="-0.05 0.5 -2.5" radius="0.5" height="0.5" color="#FFC65D"></a-cylinder>
-
-
     <a-sky src="./mod/360.jpg" rotation="0 270 0"></a-sky>
   </a-scene>
 </body>
